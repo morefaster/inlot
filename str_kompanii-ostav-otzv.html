@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Страница компании - Оставить отзыв</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container cart clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <select id="h_select" name="cat">
+                        <option value="0" selected="selected">Все категории</option>
+                        <option value="1">Категория #1</option>
+                        <option value="2">Категория #2</option>
+                        <option value="3">Категория #3</option>
+                    </select>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navigation_cart">
+                <a href="#">Аукцион</a>
+                <a href="#">Самое популярное</a>
+                <a href="#">Оптовые товары</a>
+                <a href="#">Товары со скидками</a>
+            </nav>
+
+            <!-- Оставлен пустой, т.к от него идет отступ -->
+            <div class="breadcrumbs"></div>
+
+            <div class="w_content">
+                <h3 class="w_r_title">Компания Реавто</h3>
+                <div class="cab_salesman-info1 clearfix">
+                    <div class="cab_salesman-info1_logo flLeft">
+                        <div><img src="img/photo/reauto_mini.png"></div>
+                    </div>
+
+                    <!-- cab_salesman-info1_aboutCompany -->
+                    <div class="cab_salesman-info1_aboutCompany flLeft">
+                         <div class="cab_s-i-ac_table cab_s-i-ac_table2"><span class="leftName">Адрес сайта:</span> <a href="#" target="_blank" class="orange under">reauto.ru</a></div>
+                        <div class="cab_s-i-ac_table cab_s-i-ac_table2"><span class="leftName">Телефон:</span> 8 (812) 212-34-56</div>
+                        <div class="cab_s-i-ac_table cab_s-i-ac_table2"><span class="leftName">Адрес:</span> <div class="cab_s-i-ac_table-address">Санкт-Петербург,<br> ул. Кантемировская д.39</div></div>
+                        
+                        <div class="cab_s-i-ac_table z_registr"><span class="leftName">Зарегистрирован:</span> 08.11.13</div>
+                    </div> 
+                    <!-- // .cab_salesman-info1_aboutCompany -->
+
+
+                    <div class="cab_salesman-info1_totalScore flLeft">
+                       <div class="cab_salesman-info1_totalScore-title">Общая оценка компании</div>
+                       <div class="cab_salesman-info1_totalScore-ratingCompany">
+                           <div class="str_company_tScore-votes">
+                               <div class="ratys" data-score="4">
+                                   <span>1</span>
+                                   <span>2</span>
+                                   <span>3</span>
+                                   <span>4</span>
+                                   <span>5</span>
+                               </div>
+                           </div>
+                           <div class="str_company_tScore-countVotes">4</div>
+                           <div class="str_company_tScore-linkVotes"><a href="#" class="orange under" title="">10 отзывов</a></div>
+                       </div>
+                       <div class="cab_salesman-info1_totalScore-comment">
+                           <div class="text1">Аккумулятор, собственно он и был главным плюсом в выборе среди других. держит заряд и правда хорошо- при том что ...</div>
+                           <div class="cab_s-i_tScore-comment_name">%username%</div>
+                       </div>
+                    </div>
+
+                    <div class="cab_salesman_rLinks flLeft">
+                        <a href="#" class="orange under">Связаться с продавцом</a><br>
+                        <a href="#" class="orange under">Оставить отзыв</a><br>
+                        <a href="#" class="orange under">Добавить в избранное</a>
+                        <a href="#" class="btn_orange-st5" title="">Оставить отзыв</a>
+                    </div>
+                </div>
+
+                <div id="pgCompany_info">
+                    <nav class="pgCompanyInfo-navCompanyInfo">
+                        <a href="#">Товары</a>
+                        <a class="active" href="#">Отзывы о компании</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                    <h3 class="w_r_title mBtm20">Оставить отзыв о компании</h3>
+                    <h4>Оценить этот заказ</h4>
+                    <p class="gray-text">Эти подробные рейтинги продавца анонимны, поэтому, пожалуйста, не стесняйтесь оставлять честные рейтинги о своем опыте покупки.</p>
+                    <table class="justRatingsTbl no-border">
+                      <tbody>
+                        <tr>
+                          <td>Товар соответствует описанию</td>
+                          <td>
+                            <div class="ratys" data-score="5">
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>4</span>
+                              <span>5</span>
+                            </div>
+                         </td>
+                        </tr>
+                        <tr>
+                          <td>Общение с продавцом</td>
+                          <td>
+                            <div class="ratys" data-score="4">
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>4</span>
+                              <span>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Время  доставки товара</td>
+                          <td>
+                            <div class="ratys" data-score="4">
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>4</span>
+                              <span>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Стоимость доставки товара</td>
+                          <td>
+                            <div class="ratys" data-score="3">
+                              <span>1</span>
+                              <span>2</span>
+                              <span>3</span>
+                              <span>4</span>
+                              <span>5</span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <h4>Написать отзыв</h4>
+                    <form action="#" method="post" id="str_company-formComment">
+                      <div class="str_company-formComment-ocenka">
+                        <label class="str-ocenka-label"><input type="radio" name="ocenka_company" value="2"> Положительный</label>
+                        <label class="str-ocenka-label"><input type="radio" name="ocenka_company" value="1" checked> Нейтральный</label>
+                        <label class="str-ocenka-label"><input type="radio" name="ocenka_company" value="0"> Отрицательный</label>
+                      </div>
+                      <div class="str_company-formComment-textUpForm">
+                        <span>Перед тем, как оставить отзыв, пожалуйста, <a href="#">свяжитесь с продавцом</a>. Возможно, ваше впечатление от заказа будет положительным. </span>
+                      </div>
+                      <div class="str_company-formComment-fieldComment">
+                        <textarea name="str_company-formComment"></textarea>
+                      </div>
+                      <div class="str_company-formComment-fieldComment-a">
+                        <label><input type="checkbox" name="anonym_review" value="1" checked> Отправить отзыв анонимно</label>
+                      </div>
+                      <div class="str_company-formComment-submitted">
+                        <span><input type="submit" name="submit" class="btn_orange-st5" value="Отправить отзыв"></span>
+                        <span><a href="#" class="orange under">Вернуться</a></span>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

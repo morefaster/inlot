@@ -1,0 +1,17 @@
+
+
+/*
+    IE Hacks
+*/
+
+/* clearfix */
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.gradient {
+    filter: none;
+}
+
+input.submit {
+	background: #FBA239 !important;
+}

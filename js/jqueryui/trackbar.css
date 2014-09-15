@@ -1,0 +1,66 @@
+/***************************************************************
+ *  JS-TrackBar
+ *
+ *   Copyright (C) 2008 by Alexander Burtsev - webew.ru
+ *   and abarmot - http://abarmot.habrahabr.ru/
+ *   desing: �������� ��������� - http://my.mail.ru/bk/concur/
+ *
+ *  This code is a public domain.
+ ***************************************************************/
+
+/* Reset */
+table.trackbar div, table.trackbar td {margin:0; padding:0;}
+table.trackbar {border-collapse:collapse;border-spacing:0;}
+table.trackbar img{border:0;}
+
+/* Styles */
+table.trackbar {width:250px; background: url(imgtrackbar/b_bg_on.gif) repeat-x top left; border: 0; }
+table.trackbar .l {
+    width:1%;
+    text-align: right;
+    font-size: 1px;
+    height: 28px;
+    background: #a3ba2e;
+    border:1px solid #85a631;
+    border-right:0;
+}
+table.trackbar .l div {position:relative; width:0; text-align: right; z-index:500; white-space:nowrap;}
+
+table.trackbar .l div span {
+    position:absolute;
+    top:-12px;
+    right:0 !important;
+    z-index:1000;
+    font:11px tahoma;
+    color:#000;
+    display: none;
+}
+table.trackbar .l div span.limit {text-align:left; position:absolute;top:-12px; right:100%; z-index:100; font:11px tahoma; color:#D0D0D0; display: none; }
+table.trackbar .r {
+    position:relative;
+    width:1%;
+    text-align: left;
+    font-size: 1px;
+    height: 28px;
+    background: #f0f0f0;
+    border:1px solid #a2a1a1;
+    border-left:0;
+}
+table.trackbar .r div {position:relative; width:0; text-align: left; z-index:500; white-space:nowrap;}
+
+table.trackbar .r div span {position:absolute;top:-12px; left:12px; z-index:1000; font:11px tahoma; color:#000; display: none;}
+table.trackbar .r div span.limit {position:absolute;top:-12px; left:100%; z-index:100; font:11px tahoma; color:#D0D0D0; display: none;}
+table.trackbar .c {font-size:1px; width:100%;}
+
+
+table.trackbar .r div img { display: none; }
+table.trackbar .l #leftBegun {
+    width: 12px;
+    height: 18px;
+    border: none !important;
+    display: inline-block;
+    background: url(imgtrackbar/b_cursor.png) no-repeat;
+    position: absolute;
+    top: -20px;
+    margin-left: -6px;
+}

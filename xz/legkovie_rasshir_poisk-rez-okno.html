@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Легковые - расширенный поиск - без окна</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <!-- modal Window -->
+    <link href="js/articmodal/jquery.arcticmodal-0.3.css" rel="stylesheet" type="text/css">
+    <link href="js/articmodal/simple.css" rel="stylesheet" type="text/css">
+    <script src="js/articmodal/jquery.arcticmodal-0.3.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+<!-- Header -->
+<header>
+    <div class="top_menu">
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="enter_site" href="">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a> <span class="phone_user">8-800-8000-000</span>
+            </div>
+            <div style="display: none;">
+                <div class="box-modal" id="BoxModalLogin">
+                    <div class="box-modal_close arcticmodal-close"></div>
+                    <form action="#" method="post" class="modalEnter_toSiteForm">
+                        <p>Войти через социальные сети</p>
+                        <div class="socials clearfix">
+                            <nav>
+                                <a class="vk" href="#"></a>
+                                <a class="fb" href="#"></a>
+                                <a class="odn" href="#"></a>
+                                <a class="mailru" href="#"></a>
+                            </nav>
+                        </div>
+                        <div class="EnterSiteModal_form">
+                            <h3 class="w_r_title">Войти</h3>
+                            <p><input type="text" class="styled" style="width: 100%;" placeholder="E-mail"></p>
+                            <p><input type="text" class="styled" style="width: 100%;" placeholder="E-mail"></p>
+                            <div class="flLeft">
+                                <a class="orange under" href="#">Забыли пароль?</a><br>
+                                <a class="orange under" href="#">Зарегистрироваться?</a>
+                            </div>
+                            <div class="flRight">
+                                <input type="submit" class="submit" value="Войти">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flRight">
+                <nav class="top_menu-right">
+                    <a href="#">Мой кабинет</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Форум</a>
+                    <a href="#">Помошь</a>
+                    <a class="cart_no-empty" href="#">Корзина <span class="CountGoodsInCart">4</span></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container cart clearfix">
+        <div class="flLeft">
+            <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+        </div>
+        <div class="flRight header_search_panel">
+            <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+            <div class="h_opt-search">
+                <a class="orange" href="#">Расширенный поиск</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Content -->
+<div id="wrapper">
+<div class="container">
+<!-- Меню навигации -->
+<nav class="navigation_cart">
+    <a href="#">Аукцион</a>
+    <a href="#">Оптовые товары</a>
+    <a href="#">Товары со скидками</a>
+</nav>
+
+<!-- Хлебные крошки -->
+<div class="breadcrumbs">
+    <a href="#">Транспорт и запчасти</a> > <a href="#">Транспорт</a> > <span class="active">Легковые автомобили</span>
+</div>
+
+<div class="w_content">
+<div class="w_c_index clearfix">
+<!-- Левый блок контента -->
+<aside class="w_c_indexLeft">
+    <div class="pMenu_graybg">
+        <div class="pMenu_graybg-title2">Марка</div>
+        <ul class="pMenu_graybg-cat sm">
+            <li><a href="#">Марка (колличество)</a>
+                <div class="pMenu_graybg-submenu">
+                    <div class="pmenu_graybg_submenu-wp">
+                        <div class="pMenu_graybg-submenu-title">Модели: Mersedes-Benz</div>
+                        <div class="pMenu_graybg-submenu-content">
+                            <ul class="pM-gB-submenu_list1">
+                                <li><label><input type="checkbox" name="" value=""> /8</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 190</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 220</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 230</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 240</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 250</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 280</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 300</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 320</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 500</label></li>
+                                <li><label><input type="checkbox" name="" value=""> 500</label></li>
+                            </ul>
+                            <ul class="pM-gB-submenu_list1 _list2">
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -E 200</label></li>
+                            </ul>
+                            <ul class="pM-gB-submenu_list1 _list3">
+                                <li><label><input type="checkbox" name="" value=""> S-klasse</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                                <li><label><input type="checkbox" name="" value=""> -S 260</label></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="pMenu_graybg-submenu-btnPanel">
+                            <input type="submit" class="submit" value="Выбрать">
+                            <input type="submit" class="submit gray_color" value="Отмена" onclick="close_modal();">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="link-all-see">изменить</a></li>
+        </ul>
+
+        <div class="pMenu_graybg-title2">Модели</div>
+        <ul class="pMenu_graybg-cat sm links_simple">
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#">Выбранная модель</a></li>
+            <li><a href="#" class="link-all-see">изменить</a></li>
+        </ul>
+
+        <div class="pMenu_graybg-title2">Тип кузова</div>
+        <ul class="pMenu_graybg-cat sm">
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-1" id="sideMenu_typeBodyCar1" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-2" id="sideMenu_typeBodyCar2"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-3" id="sideMenu_typeBodyCar3" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-4" id="sideMenu_typeBodyCar4" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-5" id="sideMenu_typeBodyCar5"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-6" id="sideMenu_typeBodyCar6" checked="checked"> Тип</label></li>
+        </ul>
+
+        <div class="pMenu_graybg-title2">Двигатель</div>
+        <ul class="pMenu_graybg-cat sm">
+            <li><label><input type="checkbox" name="sideMenu_typeMotorCar-1" id="sideMenu_typeMotorCar1" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeMotorCar-2" id="sideMenu_typeMotorCar2"> Тип</label></li>
+        </ul>
+
+        <div class="pMenu_graybg-title2">Тип кузова</div>
+        <ul class="pMenu_graybg-cat sm">
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-12" id="sideMenu_typeBodyCar12" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-22" id="sideMenu_typeBodyCar22"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-32" id="sideMenu_typeBodyCar32" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-42" id="sideMenu_typeBodyCar42" checked="checked"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-52" id="sideMenu_typeBodyCar52"> Тип</label></li>
+            <li><label><input type="checkbox" name="sideMenu_typeBodyCar-62" id="sideMenu_typeBodyCar62" checked="checked"> Тип</label></li>
+        </ul>
+    </div>
+</aside>
+<!-- Правый блок контента / Окно поиска -->
+<aside class="w_c_indexRight">
+<div class="search_in_category clearfix">
+    <div class="flLeft">
+        <form action="#" method="post">
+            <div class="s_in_cat-bl h_auto">
+                <div class="s_in_cat-bl_c">
+                    <span class="s_in_cat-bl_ctxt">Расширенный поиск</span>
+                </div>
+                <div class="s_in_cat-bl_c2 clearfix">
+                    <div class="label-group">
+                        <span>Марка</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Состояние</span>
+                        <select class="select" name="">
+                            <option value="0">Любое</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 clearfix">
+                    <div class="label-group oneSide">
+                        <span>Модель</span>
+                        <!-- col 1 -->
+                        <ul class="ul-label-group">
+                            <li><label><input type="checkbox" name="name1" value="1"> E-type</label></li>
+                            <li><label><input type="checkbox" name="name2" value="2"> XF</label></li>
+                            <li><label><input type="checkbox" name="name3" value="3"> XJ</label></li>
+                            <li><label><input type="checkbox" name="name5" value="5"> S-type</label></li>
+                            <li><label><input type="checkbox" name="name7" value="6"> XF</label></li>
+                            <li><label><input type="checkbox" name="name8" value="7"> XJR</label></li>
+                            <li><label><input type="checkbox" name="name9" value="8"> X-type</label></li>
+                            <li><label><input type="checkbox" name="name10" value="9"> XFR</label></li>
+                            <li><label><input type="checkbox" name="name11" value="10"> XJS Coupe</label></li>
+                            <li><label><input type="checkbox" name="name12" value="11"> XK 8</label></li>
+                            <li><label><input type="checkbox" name="name4" value="4"> XJSC Convertible</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 mBtm10 clearfix">
+                    <div class="label-group">
+                        <span>Год выпуска</span>
+                        <select class="select w110" name="year">
+                            <option value="0">Любой</option>
+                            <option value="0">1990</option>
+                            <option value="0">1991</option>
+                            <option value="0">1992</option>
+                            <option value="0">1993</option>
+                            <option value="0">1994</option>
+                            <option value="0">1995</option>
+                            <option value="0">1996</option>
+                            <option value="0">1997</option>
+                            <option value="0">1998</option>
+                            <option value="0">1999</option>
+                            <option value="0">2000</option>
+                        </select>
+                         - 
+                         <select class="select w110" name="year">
+                            <option value="0">Любой</option>
+                            <option value="0">1990</option>
+                            <option value="0">1991</option>
+                            <option value="0">1992</option>
+                            <option value="0">1993</option>
+                            <option value="0">1994</option>
+                            <option value="0">1995</option>
+                            <option value="0">1996</option>
+                            <option value="0">1997</option>
+                            <option value="0">1998</option>
+                            <option value="0">1999</option>
+                            <option value="0">2000</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Пробег, км</span>
+                        <select class="select w110" name="probeg">
+                            <option value="0">Любой</option>
+                            <option value="0">1990</option>
+                            <option value="0">1991</option>
+                            <option value="0">1992</option>
+                            <option value="0">1993</option>
+                            <option value="0">1994</option>
+                            <option value="0">1995</option>
+                            <option value="0">1996</option>
+                            <option value="0">1997</option>
+                            <option value="0">1998</option>
+                            <option value="0">1999</option>
+                            <option value="0">2000</option>
+                        </select>
+                         - 
+                         <select class="select w110" name="probeg">
+                            <option value="0">Любой</option>
+                            <option value="0">1990</option>
+                            <option value="0">1991</option>
+                            <option value="0">1992</option>
+                            <option value="0">1993</option>
+                            <option value="0">1994</option>
+                            <option value="0">1995</option>
+                            <option value="0">1996</option>
+                            <option value="0">1997</option>
+                            <option value="0">1998</option>
+                            <option value="0">1999</option>
+                            <option value="0">2000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 mBtm10 clearfix">
+                    <div class="label-group">
+                        <span>Объем двигателя, см3</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Тип двигателя</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 mBtm10 clearfix">
+                    <div class="label-group">
+                        <span>Тип кузова</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Мощность, л.с.</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 mBtm10 clearfix">
+                    <div class="label-group">
+                        <span>Привод</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>КПП</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 mBtm10 clearfix">
+                    <div class="label-group">
+                        <span>Салон</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Цвет</span>
+                        <select class="select" name="">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="1">Новое</option>
+                            <option value="2">Отличное</option>
+                            <option value="3">Хорошее</option>
+                            <option value="4">Плохое</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c clearfix">
+                    <div class="label-group">
+                        <span>Цвет салона</span>
+                        <select class="select" name="colorCarSalon">
+                            <option disabled="disabled" selected="selected">Выбрать</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                        </select>
+                    </div>
+                    <div class="label-group"></div>
+                </div>
+                <div class="s_in_cat-bl_c2 clearfix">
+                    <div class="label-group">
+                        <span>Регион</span>
+                        <select class="select" name="">
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                        </select>
+                    </div>
+                    <div class="label-group">
+                        <span>Цена</span>
+                        <input class="styled xxsmall" type="text" name="price_from"> - <input class="styled xxsmall" type="text" name="price_to">
+                    </div>
+                </div>
+                <div class="s_in_cat-bl_c2 clearfix">
+                    <div class="label-group">
+                        <span>Город</span>
+                        <select class="select" name="">
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                            <option value="0">Любой</option>
+                        </select>
+                        <br>
+                        <input type="submit" class="submit" value="Поиск" style="margin:10px 0 0;">
+                    </div>
+                    <div class="label-group">
+                        <p class="label"><label><input type="radio" name="type_auction" value="1" checked> Только Купить сейчас</label></p>
+                        <p class="label"><label><input type="radio" name="type_auction" value="2"> Только аукцион</label></p>
+                        <p class="label"><label><input type="radio" name="type_auction" value="3"> Только товары со скидками</label></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="flRight">
+        <!-- Блок с рекламой -->
+        <div class="cat-bl-Advisor noBorder">
+            <img src="img/photo/photo-advisor2.png">
+            <span>размер: ширина 268,<br>
+                высота уточняется</span>
+        </div>
+    </div>
+</div>
+
+<!-- список товаров -->
+    <h3 class="w_r_title" style="margin: 0 0 15px;">Легковые автомобили</h3>
+
+    <div class="section_tabs">
+
+    <ul class="tabs cat">
+        <li class="current">Все товары</li>
+        <li>Купить сейчас</li>
+        <li>Аукционы</li>
+    </ul>
+
+    <div class="pg_izbr-TopPannel notWinnerLots clearfix">
+        <div class="flLeft">
+            <a class="iconSort-list" href='#'></a>
+            <a class="iconSort-table active"href='#'></a>
+        </div>
+        <div class="flRight">
+                                    <span class="pg_izbr-sort">
+                                        Сортировать по
+                                        <select class="select small2 pg_izbrSortSelect" name="pg_izbr-sort-sel">
+                                            <option value="0" selected="selected">Цене (по убыванию)</option>
+                                            <option value="1">Цене (по возрастанию)</option>
+                                            <option value="2">Популярности</option>
+                                            <option value="2">Просмотрам</option>
+                                        </select>
+                                    </span>
+                                    <span class="pg_izbr-sort pg_izbr-sortCountGoods">
+                                        по
+                                        <select class="select xxsmall3 pg_izbrSortSelect" name="pg_izbr-sort-sel2">
+                                            <option value="0" selected="selected">100</option>
+                                            <option value="1">150</option>
+                                            <option value="2">200</option>
+                                            <option value="2">250</option>
+                                        </select>
+                                    </span>
+            <span class="pg_izbr-sortCountGoodsText">товаров на<br> странице</span>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="box_tab visible">
+        <!-- Навигация -->
+    <div class="pgAuction-BottomPannel">
+        <nav class="pagination">
+            <a class="prev" href="#"><img src="img/pagination_prev.gif"></a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a class="active" href="#">4</a><a href="#">5</a>
+            <a class="more" href="#">...</a>
+            <a href="#">8</a><a href="#">9</a><a href="#">10</a><a class="next" href="#"><img src="img/pagination_next.gif"></a>
+        </nav>
+    </div>
+
+    <!-- Блок с лотами -->
+    <div class="bl_to_Lots-category pgListGoods_rW100">
+        <div class="bl_pgAuction-c-wp clearfix">
+            <div class="pgFavoritesGoods_list-image">
+                <a href="#"><img src="img/photo/car-lot/car10.png" alt=""></a>
+                <span class="pgfGoods_l-img-checked"></span>
+            </div>
+            <div class="pgFavoritesGoods_list-info">
+                <a class="pgFavoritesGoods_list-infoTitle" href="#">Subaru Outback III (BL,BP)</a>
+                <div class="pgFavoritesGoods_list-info-shortinfo">Отличное состояние! Один хозяин!Сервисная книжка!<br>
+Все Т/О на дилере! Куплена в марте 2009 г.</div>
+                <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                    <div class="flLeft">
+                        <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                    </div>
+                    <div class="flRight">
+                        <span class="pgF_list-info-stavka">6 ставок</span>
+                    </div>
+                </div>
+                <div class="pgF_list-info_prodavecTime clearfix">
+                    <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                    <div class="flRight fontBold">до окончания аукциона <span class="color_green">23 ч.</span></div>
+                </div>
+            </div>
+            <div class="pgFavoritesGoods_list-price auction_info">
+                <span class="padd_clear"></span>
+                <span class="current_price_t">текущая цена</span>
+                <span class="pgf_l_p_cena1">750 000 руб.</span>
+            </div>
+        </div>
+
+        <div class="bl_pgAuction-c-wp clearfix">
+            <div class="pgFavoritesGoods_list-image">
+                <a href="#"><img src="img/photo/car-lot/car10.png" alt=""></a>
+            </div>
+            <div class="pgFavoritesGoods_list-info">
+                <a class="pgFavoritesGoods_list-infoTitle" href="#">Land Rover Range Rover III</a>
+                <div class="pgFavoritesGoods_list-info-shortinfo">В отличном состоянии! Сервисная книжка!<br>
+Дилерское обслуживание,последнее Т/O 8.01.13 на 84 000.</div>
+                <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                    <div class="flLeft">
+                        <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                    </div>
+                    <div class="flRight">
+                        <span class="pgF_list-info-stavka">6 ставок</span>
+                    </div>
+                </div>
+                <div class="pgF_list-info_prodavecTime clearfix">
+                    <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                    <div class="flRight">Аукцион завершен: 15.10.13</div>
+                </div>
+            </div>
+            <div class="pgFavoritesGoods_list-price auction_info">
+                <span class="padd_clear"></span>
+                <span class="pgf_l_p_cena1">1 000 000 руб.</span>
+                <a class="btnLink" href="#">В корзину</a>
+            </div>
+        </div>
+        
+        <div class="bl_pgAuction-c-wp clearfix">
+            <div class="pgFavoritesGoods_list-image">
+                <a href="#"><img src="img/photo/car-lot/car1.png" alt=""></a>
+                <span class="pgfGoods_l-img-checked"></span>
+            </div>
+            <div class="pgFavoritesGoods_list-info">
+                <a class="pgFavoritesGoods_list-infoTitle" href="#">Land Rover Defender 90</a>
+                <div class="pgFavoritesGoods_list-info-shortinfo">Автомобиль полностью подготовлен для езды по жесткому бездорожью<br>
+установлены: блокировки переднего и заднего моста.
+</div>
+                <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                    <div class="flLeft">
+                        <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                    </div>
+                    <div class="flRight">
+                        <span class="pgF_list-info-stavka">6 ставок</span>
+                    </div>
+                </div>
+                <div class="pgF_list-info_prodavecTime clearfix">
+                    <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                    <div class="flRight fontBold">до окончания аукциона <span class="color_green">23 ч.</span></div>
+                </div>
+            </div>
+            <div class="pgFavoritesGoods_list-price auction_info">
+                <span class="padd_clear"></span>
+                <span class="pgf_l_p_cena1">1 200 000 руб.</span>
+                <a class="btnLink" href="#">В корзину</a>
+                <span class="padd_clear"></span>
+                <span class="current_price_t">текущая цена</span>
+                <span class="current_price_count2 pgF_list-info-grayB">950 000 руб.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Блок с лотами -->
+
+    <!-- Навигация -->
+    <div class="pgAuction-BottomPannel cat">
+        <nav class="pagination">
+            <a class="prev" href="#"><img src="img/pagination_prev.gif"></a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a class="active" href="#">4</a><a href="#">5</a>
+            <a class="more" href="#">...</a>
+            <a href="#">8</a><a href="#">9</a><a href="#">10</a><a class="next" href="#"><img src="img/pagination_next.gif"></a>
+        </nav>
+    </div>
+    </div>
+    <div class="box_tab">
+
+    </div>
+    <div class="box_tab">
+
+    </div>
+</div>
+<!-- .конец списка товаров -->
+</aside>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

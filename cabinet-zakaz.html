@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Мои данные</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <div class="info_intro">
+                <p>
+                    <span class="intro_col1 name_company">Кабинет компании</span><span class="intro_col2">Адрес сайта: <a class="orange under" href="#">test.inlot.ru</a></span>
+                </p>
+                <p>
+                    <span class="intro_col1">Кабинет покупателя</span>
+                </p>
+            </div>
+            <nav class="wp_menu">
+                <a class="active" href="#">Кабинет</a>
+                <a href="#">Товары и услуги</a>
+                <a href="#">Управление сайтом</a>
+                <a href="#">Заказы</a>
+                <a href="#">Аукцион</a>
+                <a href="#">Настройка</a>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="breadcrumbs">
+                <a href="#">Кабинет компании</a> > <span class="active">Информация о компании</span>
+            </div>
+            <div class="w_content clearfix">
+                <h3 class="w_r_title" style="margin-bottom: 15px;">Заказы</h3>
+                <div class="cabinetItem_search">
+                    <form action="#" method="post">
+                        <input type="text" class="styled" value="" placeholder="введите номер заказа">
+                        <input type="submit" class="submit small" value="Поиск">
+                    </form>
+                </div>
+                <div class="cabinetItem_setting clearfix">
+                    <div class="flLeft">
+                        <p><label class="radio"><input type="radio" name="type_setting_goods" checked> Все заказы</label><label class="radio"><input type="radio" name="type_setting_goods"> Только товары</label><label class="radio"><input type="radio" name="type_setting_goods"> Только услуги</label></p>
+                    </div>
+                    <div class="flRight">
+                        <div class="cabinetItem_setting-statusGood">
+                            <label for="status_Good">Статус заказа</label>
+                            <select id="status_Good"  class="select small2" name="status_Good">
+                                <option>Любой</option>
+                                <option>Новый</option>
+                                <option>Получен</option>
+                                <option>Отказ</option>
+                                <option>Обработан</option>
+                                <option>Выполнен</option>
+                                <option>Принят к рассмотрению</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <table class="orders cabinetZakaz">
+                    <thead>
+                    <tr>
+                        <th>№ заказа</th><th>Дата</th><th class="zakaz">Заказ</th><th class="seller">Покупатель</th><th>Сумма</th><th>Статус заказа</th><th>Отзыв</th><th>Детали заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>4564565654</td>
+                        <td>5.05.2013</td>
+                        <td>Товар</td>
+                        <td class="seller">ira_86</td>
+                        <td class="amount">12 000 руб.</td>
+                        <td><span class="status_new">новый</span></td>
+                        <td><a class="orange under" href="#">посмотреть</a></td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>4564565448</td>
+                        <td>15.03.2013</td>
+                        <td>Услуга</td>
+                        <td class="seller">petrov_007</td>
+                        <td class="amount">10 000 руб.</td>
+                        <td><span class="status_refusal">отказ</span></td>
+                        <td>нет отзыва</td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>4564565600</td>
+                        <td>5.04.2013</td>
+                        <td>Товар</td>
+                        <td class="seller">petrov_007</td>
+                        <td class="amount">2 000 руб.</td>
+                        <td><span class="status_processed">обработан</span></td>
+                        <td>нет отзыва</td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>4564565501</td>
+                        <td>20.03.2013</td>
+                        <td>Услуга</td>
+                        <td class="seller">12RT65</td>
+                        <td class="amount">500 руб.</td>
+                        <td><span class="status_received">получен</span></td>
+                        <td><a class="orange under" href="#">посмотреть</a></td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>4564565600</td>
+                        <td>5.04.2013</td>
+                        <td>Товар</td>
+                        <td class="seller">petrov_007</td>
+                        <td class="amount">2 000 руб.</td>
+                        <td><span class="status_processed">обработан</span></td>
+                        <td>нет отзыва</td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    <tr>
+                        <td>4564565448</td>
+                        <td>15.03.2013</td>
+                        <td>Услуга</td>
+                        <td class="seller">petrov_007</td>
+                        <td class="amount">10 000 руб.</td>
+                        <td><span class="status_refusal">отказ</span></td>
+                        <td>нет отзыва</td>
+                        <td><a class="orange under" href="#">подробнее</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <nav class="pagination">
+                    <a class="prev" href="#"><img src="img/pagination_prev.gif"></a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a class="active" href="#">4</a><a href="#">5</a>
+                    <a class="more" href="#">...</a>
+                    <a href="#">8</a><a href="#">9</a><a href="#">10</a><a class="next" href="#"><img src="img/pagination_next.gif"></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+   <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

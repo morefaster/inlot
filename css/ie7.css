@@ -1,0 +1,26 @@
+
+
+
+.w_content_title-two {
+    margin: 0 0 20px;
+}
+
+input.submit,
+input.submit:hover,
+input.submit:active {
+    outline:none;
+    border:0;
+    font-weight: bold;
+}
+
+
+.h_search_panel .submit,
+.h_search_panel #h_select-styler,
+.h_search_panel .styled.header {
+    display: inline-block;
+
+}
+.jq-selectbox__select {
+    display: inline-block;
+    z-index:100;
+}

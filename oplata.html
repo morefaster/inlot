@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Способы оплаты</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container cart clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <select id="h_select" name="cat">
+                        <option value="0" selected="selected">Все категории</option>
+                        <option value="1">Категория #1</option>
+                        <option value="2">Категория #2</option>
+                        <option value="3">Категория #3</option>
+                    </select>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navigation_cart">
+                <a href="#">Доставка</a>
+                <a class="active" href="#">Оплата</a>
+                <a href="#">Возврат товаров</a>
+            </nav>
+
+            <div class="breadcrumbs"></div>
+
+            <div class="w_content">
+                <h3 class="w_r_title bmin">Способы оплаты</h3>
+                <p>Здесь представлены все способы оплаты, которыми можно оплачивать покупки на сайте. Обращаем ваше внимание, что продавец сам выбирает удобный ему способ оплаты. Способы оплаты товаров могут включать не все способы из данного списка.</p>
+
+                <div class="pPay-links clearfix">
+                    <div class="pPay-links-inline">
+                        <ul>
+                            <li><a href="#pay_s1">Наличный расчёт</a></li>
+                            <li><a href="#pay_s2">Карты оплаты</a></li>
+                            <li><a href="#pay_s3">Платежные системы</a></li>
+                        </ul>
+                    </div>
+                    <div class="pPay-links-inline">
+                         <ul>
+                            <li><a href="#pay_s4">Переводы</a></li>
+                            <li><a href="#pay_s5">Наложенный платеж</a></li>
+                            <li><a href="#pay_s6">Оплата со счета мобильного телефона</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pay-Lists">
+                    <div class="pay_lists-Item" id="pay_s1">
+                        <div class="pay-Item_title">Наличный расчет</div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"></div>
+                            <div class="pay-Item_bl-desc"><b>Оплата наличными при получении заказа.</b> <br>Вы оплачиваете заказ наличными курьеру при его получении. Вместе с заказом Вы получаете товарный чек, содержащий все товарные позиции Вашего заказа.</div>
+                        </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/qiwi.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Терминалы QIWI</b> - выбирая данный способ, Вы можете совершить предоплату заказа наличными через любой из платежных терминалов QIWI.<br>Размер единовременного платежа не может превышать 15 000 рублей с учетом всех комиссий.</div>
+                        </div>
+                    </div>
+                    <div class="pay_lists-Item"  id="pay_s2">
+                        <div class="pay-Item_title">Карты оплаты</div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/card.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Банковская карта</b><br> Оплатить заказ банковской картой можно как при получении заказа в пункте выдачи.</div>
+                        </div>
+                    </div>
+                    <div class="pay_lists-Item" id="pay_s3">
+                        <div class="pay-Item_title">Платежные системы </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/paypal.png"></div>
+                            <div class="pay-Item_bl-desc"><b>PayPal</b> - позволяет оплачивать покупки всего в несколько щелчков мыши. Cистема работает с картами Visa, MasterCard и American Express и Maestro.<br>Введите данные банковской карты один раз в системе PayPal, и вам больше не нужно будет указывать их при оплате. Информация в системе PayPal надежно защищена с помощью мощных инструментов шифрования данных.<br>
+                            <img src="img/pays/lists.png"></div>
+                        </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/yandex.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Яндекс.Деньги</b> — это легкий и безопасный способ оплачивать товары и услуги в интернете. Пополнение счета и оплата заказов происходят в реальном времени на сайте платежной системы сразу после подтверждения оформленного заказа.</div>
+                        </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/mail.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Деньги@Mail.Ru</b> - это простой и удобный способ оплатить покупку. Необходимая сумма перечисляется моментально, комиссия за платеж не взимается. Максимальная сумма 1 платежа - 15 000 рублей.</div>
+                        </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/webmoney.png"></div>
+                            <div class="pay-Item_bl-desc">Выбирая <b>WebMoney</b>, Вы можете совершить предоплату заказа в Интернете сразу после оформления или в другой удобный момент.</div>
+                        </div>
+                    </div>
+                    <div class="pay_lists-Item" id="pay_s4">
+                        <div class="pay-Item_title">Переводы</div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"></div>
+                            <div class="pay-Item_bl-desc"><b>Банковский перевод</b><br><p>- Вы можете оплатить заказ через любой банк, действующий на территории России.<br>- Срок зачисления денежных средств - 2-3 рабочих дня.<br>- До момента поступления денежных средств мы не резервируем на складе товары Вашего заказа. Срок обработки заказа начинается с момента поступления платежа и перевода заказа в статус "В обработке".</p><a class="orange under" href="#">Подробнее</a></div>
+                        </div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/mail_rus.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Почтовый перевод</b><br><p>- Вы можете произвести предварительную оплату заказа на почте. C тарифами на почтовый перевод можно ознакомиться на сайте Федеральной Почтовой службы.<br>- Срок перевода денежных средств по почте составляет 7-10 рабочих дней. <br>- Внимание! До момента поступления денежных средств мы не резервируем на складе товары Вашего заказа. Срок обработки заказа начинается с момента поступления платежа и перевода заказа в статус "В обработке".</p><a class="orange under" href="#">Подробнее</a></div>
+                        </div>
+                    </div>
+                    <div class="pay_lists-Item" id="pay_s5">
+                        <div class="pay-Item_title">Наложенный платеж</div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"></div>
+                            <div class="pay-Item_bl-desc"><b>Наложенный платеж</b> - это возможность оплаты заказа в момент его получения в почтовом отделении либо курьеру службы EMS. Обращаем Ваше внимание, что при оплате заказа наложенным платежом, стоимость заказа на 30-40% больше, чем при других способах оплаты.<br><a class="orange under" href="#">Подробнее</a></div>
+                        </div>
+                    </div>
+                    <div class="pay_lists-Item" id="pay_s6">
+                        <div class="pay-Item_title">Оплата со счета мобильного телефона</div>
+                        <div class="pay-Item_bl clearfix">
+                            <div class="pay-Item_bl-image"><img src="img/pays/phone.png"></div>
+                            <div class="pay-Item_bl-desc"><b>Билайн, Мегафон, МТС</b><br>Услуга «Мобильный платеж InPlat» - это простой, безопасный и доступный каждому способ моментальной оплаты. Для оплаты достаточно отправить SMS или заполнить поля веб-формы, следуя инструкциям сайта. Если информация указана корректно и на мобильном счете достаточно средств для оплаты, на мобильный телефон поступит SMS c просьбой подтвердить платёж отправкой в ответном SMS указанной цифры. После этого произойдет списание стоимости заказа, а финальное SMS сообщит об успешном платеже. Если будет допущена ошибка, то ответное SMS укажет на нее. При этом все SMS - и входящие, и исходящие - бесплатны. В зависимости от оператора связи может взиматься комиссия за перевод средств.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

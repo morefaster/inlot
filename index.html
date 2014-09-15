@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <!-- modal Window -->
+    <link href="js/articmodal/jquery.arcticmodal-0.3.css" rel="stylesheet" type="text/css">
+    <link href="js/articmodal/simple.css" rel="stylesheet" type="text/css">
+    <script src="js/articmodal/jquery.arcticmodal-0.3.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+<header>
+    <div class="top_menu">
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="enter_site" href="">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+            </div>
+            <div style="display: none;">
+                <div class="box-modal" id="BoxModalLogin">
+                    <div class="box-modal_close arcticmodal-close"></div>
+                    <form action="#" method="post" class="modalEnter_toSiteForm">
+                        <p>Войти через социальные сети</p>
+                        <div class="socials clearfix">
+                            <nav>
+                                <a class="vk" href="#"></a>
+                                <a class="fb" href="#"></a>
+                                <a class="odn" href="#"></a>
+                                <a class="mailru" href="#"></a>
+                            </nav>
+                        </div>
+                        <div class="EnterSiteModal_form">
+                            <h3 class="w_r_title">Войти</h3>
+                            <p><input type="text" class="styled" style="width: 100%;" placeholder="Введите E-mail"></p>
+                            <p><input type="password" class="styled" style="width: 100%;" placeholder="Введите пароль"></p>
+                            <div class="flLeft">
+                                <a class="orange under" href="#">Забыли пароль?</a><br>
+                                <a class="orange under" href="#">Зарегистрироваться?</a>
+                            </div>
+                            <div class="flRight">
+                                <input type="submit" class="submit" value="Войти">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flRight">
+                <nav class="top_menu-right">
+                    <a href="#">Мой кабинет</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Форум</a>
+                    <a href="#">Помошь</a>
+                    <a href="#">Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container cart clearfix">
+        <div class="flLeft">
+            <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+        </div>
+        <div class="flRight header_search_panel">
+            <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+            <div class="h_opt-search">
+                <a class="orange" href="#">Расширенный поиск</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="wrapper">
+    <div class="container">
+        <nav class="navigation_cart">
+            <a href="#">Аукцион</a>
+            <a href="#">Самое популярное</a>
+            <a href="#">Оптовые товары</a>
+            <a href="#">Товары со скидками</a>
+        </nav>
+        <div class="w_content">
+            <div class="w_c_index clearfix">
+                <div class="w_c_indexLeft">
+                    <menu class="indexPageMenu">
+                        <li><a href="#">Транспорт и запчасти</a></li>
+                        <li><a href="#">Электроника</a></li>
+                        <li><a href="#">Все для дома</a></li>
+                        <li><a href="#">Одежда и обувь</a></li>
+                        <li><a href="#">Украшения и часы</a></li>
+                        <li><a href="#">Товары для детей</a></li>
+                        <li><a href="#">Ремонт и строительство</a></li>
+                    </menu>
+                    <menu id="menu-all-cat">
+                        <li>
+                            <a href='#' class="btnLink gray all_categories">Все категории <span id="arrow_right"></span></a>
+                            <div id="indexMenu_list-bl">
+                                <ul id="indexMenu_fullOpen">
+                                    <li><a href="#">Недвижимость</a></li>
+                                    <li><a href="#">Коллекционирование</a></li>
+                                    <li><a href="#">Готовый бизнес</a></li>
+                                    <li><a href="#">Искусство и антиквариат</a></li>
+                                    <li><a href="#">Игры, музыка, фильмы</a></li>
+                                    <li><a href="#">Книги</a></li>
+                                    <li><a href="#">Товары для спорта</a></li>
+                                    <li><a href="#">Дом и сад</a></li>
+                                    <li><a href="#">Растения и животные</a></li>
+                                    <li><a href="#">Хобби</a></li>
+                                    <li><a href="#">Красота и здоровье</a></li>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">Праздники и подарки</a></li>
+                                    <li><a href="#">Мебель</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </menu>
+                </div>
+                <div class="w_c_indexRight">
+                    <div class="w_c_indexIntro"><a href="#"><img src="img/photo/photo7.png"></a></div>
+                </div>
+            </div>
+            <div class="w_c_index2">
+                <div class="section_tabs">
+                    <div class="clearfix">
+                        <div class="flLeft">
+                            <ul class="tabs indexPageTab">
+                                <li class="current">Рекомендуемые товары</li>
+                                <li>Недавно просмотренные</li>
+                                <li>Новинки</li>
+                                <li>Акции и скидки</li>
+                            </ul>
+                        </div>
+                        <div class="flRight">
+                            <a class="orange under" href="#" style="line-height: 30px;">Посмотреть все товары</a>
+                        </div>
+                    </div>
+                    <div class="box_tab visible">
+                        <ul class="indexGoodsLists">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_tab">
+                        <ul class="indexGoodsLists">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="pgf_l_p_cena2">15 000 руб.</span>
+                                            <span class="current_price_count2">-10%</span>
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix indexGoodsLists_info-price2">
+                                        <div class="flLeft">
+                                            <span class="pgF_list-info-grayB">8 500 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <span class="pgF_list-info-stavka">6 ставок</span>
+                                            <span class="current_price_count2">2 д. 23 ч.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <span class="pgF_list-info-stavka lineHeight">8 ставок</span>
+                                            <span class="current_price_count2">3 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <span class="pgF_list-info-stavka lineHeight">8 ставок</span>
+                                            <span class="current_price_count2">3 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_tab">
+                        <ul class="indexGoodsLists">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_tab">
+                        <ul class="indexGoodsLists">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                    <div class="clearfix">
+                                        <div class="indexGoodsLists_info-price flLeft">
+                                            <span class="fontBold">15 000 руб.</span>
+                                        </div>
+                                        <div class="flRight">
+                                            <a class="btnLink btnSmall" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w_c_index3 w_c_index-names">
+                <div class="section_tabs">
+                    <div class="clearfix">
+                        <div class="flLeft">
+                            <ul class="tabs indexPageTab">
+                                <li class="current">Популярные категории</li>
+                                <li>Популярные магазины</li>
+                            </ul>
+                        </div>
+                        <div class="flRight">
+                            <a class="orange under" href="#" style="line-height: 30px;">Посмотреть все категории</a>
+                        </div>
+                    </div>
+                    <div class="box_tab visible">
+                        <ul class="indexGoodsLists categories">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Фото и видео, оптика</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-phone.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Телефоны и аксессуары</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-allhome.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Все для дома</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-odejda.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Одежда и обувь</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-car.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Транспорт и запчасти</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box_tab">
+                        <ul class="indexGoodsLists categories">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo2-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Реавто</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo3-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Мыльная белка</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo4-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">SEWshop</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo5-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">PichShop</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo6-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">ЯМИNYAMИ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w_c_index5">
+                <section class="w_c_index5-inlines">
+                    <div class="w_c_index5-inline">
+                        <h2 class="h2-title_st1">Удобная доставка</h2>
+                        <p>Мы доставляем товары по всей России. Вы можете выбрать способ доставки наиболее удобный для Вас: Самовывоз из пункта выдачи заказов, доставка курьерской службой или доставка почтой России.</p>
+                        <a href="#"><img src="img/image_delivery/pay1.png" height="47" width="298"></a>
+                        <a class="orange under" href="#">Подробнее о доставке</a>
+                    </div>
+                    <div class="w_c_index5-inline">
+                        <h2 class="h2-title_st1">Гибкая и удобная система оплаты</h2>
+                        <p>Мы принимаем любую форму оплаты: 
+                        банковскими картами, начилными курьеру и наложенным платежом. 
+                        На сайте вы можете оплатить товар с помощью платежных систем.</p>
+                        <a href="#"><img src="img/image_delivery/pay2.png"></a>
+                        <a class="orange under" href="#">Подробнее об оплате</a>
+                    </div>
+                    <div class="w_c_index5-inline">
+                        <h2 class="h2-title_st1">Программы защиты пользователей</h2>
+                        <p>Мы заботимся о своих клиентах. Для того, чтобы вы смогли  спокойно пользоваться нашими услугами на сайте  эффективно работают “Программа защиты покупателей” и “Программа защиты продавцов”</p>
+                        <a href="#" class="secure-pok_green">Программа защиты покупателей</a>
+                        <a href="#" class="secure-pok_orange">Программа защиты покупателей</a>
+                    </div>
+
+                </section>
+                <div class="clearfix"></div>
+            </div>
+            <div class="w_c_index4 w_c_index-names">
+                <div class="section_tabs">
+                    <div class="clearfix">
+                        <div class="flLeft">
+                            <ul class="tabs indexPageTab">
+                                <li class="current">Популярные магазины</li>
+                            </ul>
+                        </div>
+                        <div class="flRight">
+                            <a class="orange under" href="#" style="line-height: 30px;">Посмотреть все магазины</a>
+                        </div>
+                    </div>
+                    <div class="box_tab visible">
+                        <ul class="indexGoodsLists categories">
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo2-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Реавто</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo6-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">Мыльная белка</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo5-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">SEWshop</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo3-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">PichShop</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo4-big.png"></a></div>
+                                <div class="indexGoodsLists_info">
+                                    <a class="indexGoodsLists_info-link" href="#">ЯМИNYAMИ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w_c_index6">
+                <section>
+                    <h2 class="h2-title_st1">Добро пожаловать на inlot.ru</h2>
+                    <p class="index_p-description">Inlot.ru- это торговая площадка, работающая в режиме он-лайн. Здесь вы можете продать и купить самые разнообразные вещи. Ваше местонахождение не имеет значения – продавайте и покупайте товар по всему миру!Для того, чтобы вам было легче ориентироваться в показателях надежности участника торгов, мы используем систему рейтинга и отзывов. На нашем интернет-аукционе работает надежная  Программа защиты пользователей.Специалисты нашей горячей линии всегда готовы прийти вам на помощь и ответить на любые вопросы. Inlot.ru- это торговая площадка, работающая в режиме он-лайн. Здесь вы можете продать и купить самые разнообразные вещи. Ваше местонахождение не имеет значения – продавайте и покупайте товар по всему миру!Для того, чтобы вам было легче ориентироваться в показателях надежности участника торгов, мы используем систему рейтинга и отзывов. На нашем интернет-аукционе работает надежная  Программа защиты пользователей.Специалисты нашей горячей линии всегда готовы прийти вам на помощь и ответить на любые вопросы.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

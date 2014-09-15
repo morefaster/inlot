@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Кабинет продавца</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет <span class="ui_inform-TopMenu">11</span></a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a class="cart_no-empty" href="#">Корзина <span class="CountGoodsInCart">4</span></a>
+                    </nav>
+                    <ul class="notificationTopMenu">
+                        <li><b>Кабинет компании</b></li>
+                        <li>
+                            <div class="flLeft"><a href="#">Новые заказы</a></div>
+                            <div class="flRight notificationTopMenu-countEvent">2</div>
+                        </li>
+                        <li>
+                            <div class="flLeft"><a href="#">Новые сообщения</a></div>
+                            <div class="flRight notificationTopMenu-countEvent empty">0</div>
+                        </li>
+                        <li>
+                            <div class="flLeft"><a href="#">Новый отзыв о компании</a></div>
+                            <div class="flRight notificationTopMenu-countEvent">2</div>
+                        </li>
+                        <li>
+                            <div class="flLeft"><a href="#">Новый отзыв о товаре</a></div>
+                            <div class="flRight notificationTopMenu-countEvent">2</div>
+                        </li>
+                        <li>
+                            <div class="flLeft"><a href="#">Завершенные аукционы</a></div>
+                            <div class="flRight notificationTopMenu-countEvent">2</div>
+                        </li>
+                        <li><b>Кабинет покупателя</b> <a href="#" class="orange notificationTopMenu-events">3 события</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <div class="info_intro">
+                <p>
+                    <span class="intro_col1 name_company">Кабинет компании</span>
+                    <span class="intro_col2">Адрес сайта: <a class="orange under" href="#">test.inlot.ru</a></span>
+                </p>
+                <p>
+                    <span class="intro_col1"><a class="orange under" href="#">Кабинет покупателя</a></span>
+                </p>
+            </div>
+            <nav class="wp_menu">
+                <a class="active" href="#">Кабинет</a>
+                <a href="#" class="issetNotific">Товары и услуги</a>
+                <a href="#">Управление сайтом</a>
+                <a href="#">Заказы <span class="wp_menu-notific">2</span></a>
+                <a href="#">Аукцион <span class="wp_menu-notific">2</span></a>
+                <a href="#">Сообщения <span class="wp_menu-notific">2</span></a>
+                <a href="#">Настройка</a>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="breadcrumbs">
+                <span class="active">Кабинет компании</span>
+            </div>
+            <div class="w_content clearfix">
+                <div class="w_content_title-two w_r_title-mrgBtm25">
+                    <h3 class="w_r_title Left">Кабинет компании</h3>
+                    <div class="w_r_titleRight"><a class="orange under" href="#">Редактировать персональную информацию</a></div>
+                </div>
+
+                <div class="cab_salesman-info1 clearfix">
+                    <div class="cab_salesman-info1_logo flLeft">
+                        <div><img src="img/photo/reauto_mini.png"></div>
+                    </div>
+                    <div class="cab_salesman-info1_aboutCompany flLeft">
+                        <div class="cab_s-i-ac_title">Реавто</div>
+                        <div class="cab_s-i-ac_table"><span class="leftName">Контактное лицо:</span> Александр</div>
+                        <div class="cab_s-i-ac_table"><span class="leftName">Телефон:</span> 8 (812) 212-34-56</div>
+                        <div class="cab_s-i-ac_table"><span class="leftName">Адрес сайта:</span> <a href="#" target="_blank" class="orange under">reauto.ru</a></div>
+                        <div class="cab_s-i-ac_table"><span class="leftName">Дата регистрации:</span> 01.11.13</div>
+                    </div>
+                    <div class="cab_salesman-info1_rating flLeft">
+                        <div class="cab_s-i-ac_title2">Мой рейтинг (24)</div>
+                        <div class="cab_s-i-ac_blRating clearfix">
+                            <div class="cab_salesman-info1_rating-leftbl flLeft">
+                                <p>Товар соответствует описанию</p>
+                                <p>Общение с продавцом</p>
+                                <p>Время  доставки товара</p>
+                                <p>Стоимость доставки товара</p>
+                            </div>
+                            <div class="cab_salesman-info1_rating-rightbl flLeft">
+                                <div class="cab_s-i-ac_Line-rating">
+                                    <span class="ItemLot_ratingComp">
+                                        <a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a> 4,9
+                                    </span>
+                                </div>
+                                <div class="cab_s-i-ac_Line-rating">
+                                    <span class="ItemLot_ratingComp">
+                                        <a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a><a class="vote_rating" href="#"></a> 4,9
+                                    </span>
+                                </div>
+                                <div class="cab_s-i-ac_Line-rating">
+                                    <span class="ItemLot_ratingComp">
+                                        <a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating " href="#"></a><a class="vote_rating" href="#"></a><a class="vote_rating" href="#"></a> 4,9
+                                    </span>
+                                </div>
+                                <div class="cab_s-i-ac_Line-rating">
+                                    <span class="ItemLot_ratingComp">
+                                        <a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a><a class="vote_rating" href="#"></a><a class="vote_rating" href="#"></a><a class="vote_rating" href="#"></a> 4,9
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cab_salesman-info1_valuation flLeft">
+                        <div class="cab_s-i-ac_title2">Оценок</div>
+                        <p><span class="cab_s-i-ac-ocenka">(10)</span></p>
+                        <p><span class="cab_s-i-ac-ocenka">(10)</span></p>
+                        <p><span class="cab_s-i-ac-ocenka">(10)</span></p>
+                        <p><span class="cab_s-i-ac-ocenka">(10)</span></p>
+                    </div>
+                </div>
+
+                <div class="cab_salesman-info2 clearfix">
+                    <div class="cab_salesman-info2_table1 tblMargRight1 flLeft">
+                        <div class="cab_c_mS_custom-title">Новых заказов: <a href="#" class="orange under">7</a></div>
+                        <table class="cabInfoStatsSalesman_tbl1 tblPaddDown1">
+                            <thead>
+                                <tr>
+                                    <th>Заказы</th>
+                                    <th class="col">Колличество</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Заказы через корзину</td>
+                                    <td><a href="#" class="orange under">5</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Заявки с сайта</td>
+                                    <td><a href="#" class="orange under">2</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Всего заказов в неделю</td>
+                                    <td><a href="#" class="orange under">20</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все заказы</a>
+                    </div>
+                    <div class="cab_salesman-info2_table2 tblMargRight1 flLeft">
+                        <div class="cab_c_mS_custom-title">Новые сообщения: <a href="#" class="orange under">3</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo2 tblPaddDown1">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th><th style="width:100px;">Пользователь</th><th>Сообщение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="time_now">12:58</span></td>
+                                    <td>doctor</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>23.05.2013</td>
+                                    <td>petrov98</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>25.05.2013</td>
+                                    <td>ryba-kit88</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все сообщения</a>
+                    </div>
+                    <div class="cab_salesman-info2_table3 flLeft">
+                        <div class="cab_c_mS_custom-title">Аукционы: <a href="#" class="orange under">12</a></div>
+                            <table class="cab_c-mS_custom-tbl tblStatisticInfo3 tblPaddDown1">
+                                <thead>
+                                    <tr>
+                                        <th>Аукционы</th><th>Колличество</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Завершенные</td>
+                                        <td><a href="#" class="orange under">4</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Активные</td>
+                                        <td><a href="#" class="orange under">8</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="orange under">Посмотреть все аукционы</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cab_salesman-info3 clearfix">
+                    <div class="cab_salesman-info3_table1 tblMargRight1 flLeft">
+                        <div class="cab_c_mS_custom-title">Новые отзывы о компании: <a href="#" class="orange under">10</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo2 tblPaddDown1">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th><th style="width:100px;">Пользователь</th><th>Отзыв</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="time_now">12:58</span></td>
+                                    <td>doctor</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>23.05.2013</td>
+                                    <td>petrov98</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>25.05.2013</td>
+                                    <td>ryba-kit88</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все сообщения</a>                        
+                    </div>
+                    <div class="cab_salesman-info3_table2 tblMargRight1 flLeft">
+                        <div class="cab_c_mS_custom-title">Новые отзывы о товарах: <a href="#" class="orange under">10</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo2 tblPaddDown1">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th><th style="width:100px;">Пользователь</th><th>Отзыв</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="time_now">12:58</span></td>
+                                    <td>doctor</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>23.05.2013</td>
+                                    <td>petrov98</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>25.05.2013</td>
+                                    <td>ryba-kit88</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все сообщения</a>
+                    </div>
+                    <div class="cab_salesman-info3_table3 flLeft">
+                        <div class="cab_c_mS_custom-title">Статистика посещений за сегодня</div>
+                            <table class="cab_c-mS_custom-tbl tblStatisticInfo3 tblPaddDown1">
+                                <thead>
+                                    <tr>
+                                        <th>Статистика</th><th>Колличество</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Просмотрено товаров</td>
+                                        <td><a href="#" class="orange under">4</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Переходов на сайт</td>
+                                        <td><a href="#" class="orange under">8</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="orange under">Вся статистика</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Редактирование товара - описание товара</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+            </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <div class="info_intro">
+                <p>
+                    <span class="intro_col1 name_company">Кабинет компании</span><span class="intro_col2">Адрес сайта: <a class="orange under" href="#">test.inlot.ru</a></span>
+                </p>
+                <p>
+                    <span class="intro_col1">Кабинет покупателя</span>
+                </p>
+            </div>
+            <nav class="wp_menu">
+                <a href="#">Кабинет</a>
+                <a class="active" href="#">Товары и услуги</a>
+                <a href="#">Управление сайтом</a>
+                <a href="#">Заказы</a>
+                <a href="#">Аукцион</a>
+                <a href="#">Настройка</a>
+            </nav>
+            <div class="clear"></div>
+            <div class="breadcrumbs">
+                <a href="#">Кабинет компании</a> > <a href="#">Товары и услуги</a> > <span class="active">Управление товарами</span>
+            </div>
+            <div class="w_content">
+                <div class="w_content_title-two w_r_title-mrgBtm25">
+                    <h3 class="w_r_title Left">Редактирование товара</h3>
+                    <div class="w_r_titleRight">
+                        <a class="btnLink" href="#">Добавить товар</a>
+                        <a class="btnLink green" href="#">Добавить группу</a>
+                        <a class="btnLink blue" href="#">Импорт товаров</a>
+                    </div>
+                </div>
+                <div class="wrapper_c">
+                    <span>Качество заполнения</span>
+                    <div class="pr_bar">
+                        <span class="bar" style="width: 70%;"></span>
+                        <span class="bar-text">70%</span>
+                    </div><br>
+                    <div class="edit_itemGoods">
+                        <nav class="admin_nav-editItemGood">
+                            <a href="#">Общая информация</a>
+                            <a href="#">Характеристики</a>
+                            <a class="current" href="#">Описание товара</a>
+                            <a href="#">Категории и ключевые слова</a>
+                            <a href="#">Настройки SEO</a>
+                        </nav>
+
+                        <div class="admin_editInfoGood">
+                            <form action="#" method="post">
+                                <div class="blGrayColor grColor">
+                                    <div class="editGoodsItem_fullinfo">
+                                            <div class="contact_info"><label class="label">Группа</label>
+
+                                                <select class="select normal" name="group">
+                                                    <option value="0" selected="selected" disabled>Выбрать</option>
+                                                    <option value="1">Группа №1</option>
+                                                    <option value="2">Группа №2</option>
+                                                    <option value="3">Группа №3</option>
+                                                </select>
+                                                <div class="contact_info-label nopadd">
+                                                    <a class="orange under" href="#">Создать группу</a>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <p class="contact_info"><label class="label">Краткое описание</label><textarea class="styled fullwidth h_small" name="short_desc"></textarea></p>
+                                            <p class="contact_info"><label class="label">Полное описание</label><textarea class="styled  fullwidth h_small2" name="full_desc"></textarea></p>
+                                        </div>
+                                </div>
+                                <br>
+                                <input type="submit" class="submit" value="Сохранить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

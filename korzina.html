@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container cart clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navigation_cart">
+                <a href="#">Аукцион</a>
+                <a href="#">Самое популярное</a>
+                <a href="#">Оптовые товары</a>
+                <a href="#">Товары со скидками</a>
+            </nav>
+            <div class="breadcrumbs">
+                <a href="#">Корзина</a>
+            </div>
+            <div class="w_content">
+                <h3 class="w_r_title">Корзина</h3>
+                <div class="blc_cart clearfix">
+                    <div class="sidebar_cart">
+                        <div class="sidebar_bl">
+                            <h3 class="sidebar_title">Вы также просматривали</h3>
+                            <div class="sidebar_bl_c">
+                            <ul class="bl_YouLooked">
+                                <li>
+                                    <div class="bl_YouLooked_screen"><img src="img/info_file_img-mini.png" alt=""></div>
+                                    <div class="bl_YouLooked_info">
+                                        <div class="bl_YouLooked_Title"><a class="orange" href="#">Носки шерстяные</a></div>
+                                        <div class="bl_YouLooked_other clearfix">
+                                            <span class="bl_YouLookedItem_amount">720 руб.</span> <a class="btnLink" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl_YouLooked_screen"><img src="img/info_file_img-mini.png" alt=""></div>
+                                    <div class="bl_YouLooked_info">
+                                        <div class="bl_YouLooked_Title"><a class="orange" href="#">Гидрокостюм Quiksilver Mens 3/2 L/sl Steamer SS12</a></div>
+                                        <div class="bl_YouLooked_other">
+                                            <span class="bl_YouLookedItem_amount">10 000 руб.</span> <a class="btnLink" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl_YouLooked_screen"><img src="img/info_file_img-mini.png" alt=""></div>
+                                    <div class="bl_YouLooked_info">
+                                        <div class="bl_YouLooked_Title"><a class="orange" href="#">Носки шерстяные</a></div>
+                                        <div class="bl_YouLooked_other clearfix">
+                                            <span class="bl_YouLookedItem_amount">720 руб.</span> <a class="btnLink" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bl_YouLooked_screen"><img src="img/info_file_img-mini.png" alt=""></div>
+                                    <div class="bl_YouLooked_info">
+                                        <div class="bl_YouLooked_Title"><a class="orange" href="#">Гидрокостюм Quiksilver Mens 3/2 L/sl Steamer SS12</a></div>
+                                        <div class="bl_YouLooked_other">
+                                            <span class="bl_YouLookedItem_amount">100 000 руб.</span> <a class="btnLink" href="#">В корзину</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_wrapper">
+                        <table class="listsGoodInBasket">
+                            <thead>
+                                <tr>
+                                    <th></th><th class="nameGoodItem">Наименование товара</th><th>Цена, руб.</th><th class="countGoodItem">Колличество</th><th class="amountItem">Стоимость, руб.</th><th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Вейкборд Jobe Artist Series 12</a></td><td class="priceGoodItem">8 000 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="1"></div></td><td class="amountItem">8 000 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Вейкборд Jobe Austin Series 12</a></td><td class="priceGoodItem">9 000 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="1"></div></td><td class="amountItem">9 000 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Гидрокостюм Quiksilver Mens 3/2 L/sl Steamer SS12</a></td><td class="priceGoodItem">5 600 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="2"></div></td><td class="amountItem">11 200 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="fullCostGoods_bl">
+                             <div class="itemGoodsSeller">Продавец: <a class="orange" href="#">Сникерс и скейтборд</a></div> <span class="sellerGoods_forPayment">К оплате: <span class="font_bOrange">28 200 руб.</span></span> <a class="btnLink" href="#">Оформить заказ</a> <a class="orange under" href="#">продолжить покупки</a>
+                        </div>
+                        <table class="listsGoodInBasket">
+                            <tbody>
+                            <tr>
+                                <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Наушники Skullcandy Lowrider w/mic</a></td><td class="priceGoodItem">1 500 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="4"></div></td><td class="amountItem">6 000 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                            </tr>
+                            <tr>
+                                <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Рюкзак Dakine Girls Heli Pro Pack 12-13</a></td><td class="priceGoodItem">3 000 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="1"></div></td><td class="amountItem">3 000 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                            </tr>
+                            <tr>
+                                <td><div class="listsGoodInBasket_imageGood"></div></td><td><a class="orange" href="#">Часы Nixon Time Teller P</a></td><td class="priceGoodItem">2 600 руб.</td><td><div class="bl_countNumber"><input type="text" class="input_number" value="2"></div></td><td class="amountItem">5 200 руб.</td><td><a class="delItemGood" title="Удалить из корзины" href="#"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="fullCostGoods_bl">
+                            <div class="itemGoodsSeller">Продавец: <a class="orange" href="#">Супер Продавец</a></div> <span class="sellerGoods_forPayment">К оплате: <span class="font_bOrange">14 200 руб.</span></span> <a class="btnLink" href="#">Оформить заказ</a> <a class="orange under" href="#">продолжить покупки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

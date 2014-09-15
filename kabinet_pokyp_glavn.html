@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Кабинет покупателя</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <div class="info_intro clearfix">
+                <div class="flLeft">
+                    <p>
+                        <span class="intro_col1 name_company">Кабинет покупателя</span>
+                    </p>
+                    <p>
+                        <span class="intro_col1"><a class="orange under" href="#">Создать кабинет продавца</a></span>
+                    </p>
+                </div>
+                <div class="flRight"></div>
+            </div>
+
+            <nav class="wp_menu">
+                <a href="#">Персональная информация</a>
+                <a href="#">Сообщения</a>
+                <a href="#">Заказы</a>
+                <a href="#">Заявки</a>
+                <a href="#">Избранное</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Аукционы</a>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="breadcrumbs">
+                <span class="active">Кабинет покупателя</span>
+            </div>
+            <div class="w_content clearfix">
+                <div class="w_content_title-two w_r_title-mrgBtm25">
+                    <h3 class="w_r_title Left">Личные данные</h3>
+                    <div class="w_r_titleRight"><a class="orange under" href="#">Редактировать персональную информацию</a></div>
+                </div>
+                
+                <div class="cabinet_customer-info">
+                    <div class="cabinet_customer-info_photo flLeft">
+                        <span><img src="img/photo/petrova.png" alt="Петрова Лена"></span>
+                    </div>
+                    <div class="cabinet_customer-info_col1 flLeft">
+                        <p class="cab_cust-info_col1-p"><b>Петрова Лена</b></p>
+                        <p class="cab_cust-info_col1-p">Санкт-Петербург</p>
+                        <p class="cab_cust-info_col1-p">Дата регистрации: 08.11.13</p>
+                    </div>
+                    <div class="cabinet_customer-info_col2 flLeft">
+                        <ul class="cabinet_customer-info_col2-list">
+                            <li><div class="cab_c-info_col2-left">Всего заказав:</div><div class="cab_c-info_col2-right"><a class="orange under" href="#">12</a></div></li>
+                            <li><div class="cab_c-info_col2-left">Ожидают оплату:</div><div class="cab_c-info_col2-right"><a class="orange under" href="#">1</a></div></li>
+                            <li><div class="cab_c-info_col2-left">Ожидают доставку:</div><div class="cab_c-info_col2-right"><a class="orange under" href="#">3</a></div></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="cab_customer-mainStatic clearfix">
+                    <div class="cab_customer-mainStatic_custom flLeft">
+                        <div class="cab_c_mS_custom-title">Заказы: всего <a href="#" class="orange under">12</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo1">
+                            <thead>
+                                <tr>
+                                    <th>№ заказа</th><th>Дата</th><th>Статус</th><th>Детали</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12345</td>
+                                    <td><span class="time_now">12:58</span></td>
+                                    <td><span class="status_new">новый</span></td>
+                                    <td><a href="#" class="orange under">подробнее</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12345</td>
+                                    <td>25.05.2013</td>
+                                    <td><span class="status_processed">обработан</span></td>
+                                    <td><a href="#" class="orange under">подробнее</a></td>
+                                </tr>
+                                <tr>
+                                    <td>12345</td>
+                                    <td>23.05.2013</td>
+                                    <td><span class="status_refusal">отказ</span></td>
+                                    <td><a href="#" class="orange under">подробнее</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все заказы</a>
+                    </div>
+                    <div class="cab_customer-mainStatic_msgs flLeft">
+                        <div class="cab_c_mS_custom-title">Новые сообщения: <a href="#" class="orange under">3</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo2">
+                            <thead>
+                                <tr>
+                                    <th>Дата</th><th style="width:100px;">Пользователь</th><th>Сообщение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="time_now">12:58</span></td>
+                                    <td>doctor</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>23.05.2013</td>
+                                    <td>petrov98</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                                <tr>
+                                    <td>25.05.2013</td>
+                                    <td>ryba-kit88</td>
+                                    <td><a href="#" class="orange under">посмотреть</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все сообщения</a>
+                    </div>
+                    <div class="cab_customer-mainStatic_auction flLeft">
+                        <div class="cab_c_mS_custom-title">Аукционы с моими ставками: <a href="#" class="orange under">12</a></div>
+                        <table class="cab_c-mS_custom-tbl tblStatisticInfo3">
+                            <thead>
+                                <tr>
+                                    <th>Аукционы</th><th>Колличество</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Активные</td>
+                                    <td><a href="#" class="orange under">4</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Выигранные</td>
+                                    <td><a href="#" class="orange under">8</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="orange under">Посмотреть все аукционы</a>
+                    </div>
+                </div>
+
+                <div class="GoodsList_similar sp_goodsL">
+                    <h3 class="w_r_title-goods">Последние просмотренные</h3>
+                    <ul class="indexGoodsLists">
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/lots_toys/car.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Машинка</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="pgF_list-info-author mrgTop15">
+                                    <a class="orange nounder" href="#">Мыльная белка 0298 <span class="icon_super-prodavec"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/lots_toys/1.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Инструменты</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="pgF_list-info-author mrgTop15">
+                                    <a class="orange nounder" href="#">Мыльная белка 0298 <span class="icon_super-prodavec"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/lots_toys/2.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Lego</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="pgF_list-info-author mrgTop15">
+                                    <a class="orange nounder" href="#">Мыльная белка 0298 <span class="icon_super-prodavec"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/lots_toys/3.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Lego</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="pgF_list-info-author mrgTop15">
+                                    <a class="orange nounder" href="#">Мыльная белка 0298 <span class="icon_super-prodavec"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/lots_toys/3.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Lego</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                                <div class="pgF_list-info-author mrgTop15">
+                                    <a class="orange nounder" href="#">Мыльная белка 0298 <span class="icon_super-prodavec"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                <div class="alignRight mrgTop30"><a href="#" class="orange under">Посмотреть все</a></div>
+            </div>
+                <div class="GoodsList_similar sp_goodsL">
+                    <h3 class="w_r_title-goods">Активные аукционы</h3>
+                    <ul class="indexGoodsLists">
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                <div class="alignRight mrgTop30"><a href="#" class="orange under">Посмотреть все</a></div>
+            </div>
+            <div class="GoodsList_similar sp_goodsL">
+                    <h3 class="w_r_title-goods">Избранные товары</h3>
+                    <ul class="indexGoodsLists">
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-olympus-big.png"></a><a class="lot_bl_colDeletItem" href="#" title="Удалить"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a><a class="lot_bl_colDeletItem" href="#" title="Удалить"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-canon-big.png"></a><a class="lot_bl_colDeletItem" href="#" title="Удалить"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-nikon-big.png"></a><a class="lot_bl_colDeletItem" href="#" title="Удалить"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="in_lot_image"><a href="#" class="in_lot_image-link"><img src="img/photo/photo-pentax-big.png"></a><a class="lot_bl_colDeletItem" href="#" title="Удалить"></a></div>
+                            <div class="indexGoodsLists_info">
+                                <a class="indexGoodsLists_info-link" href="#">Фотоаппарат Pentax</a>
+                                <div class="clearfix">
+                                    <div class="indexGoodsLists_info-price flLeft">
+                                        <span class="fontBold">15 000 руб.</span>
+                                    </div>
+                                    <div class="flRight">
+                                        <a class="btnLink btnSmall" href="#">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                <div class="alignRight mrgTop30"><a href="#" class="orange under">Посмотреть все</a> <a href="#" class="orange under" style="margin-left: 20px;">Очистить список</a></div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+ <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

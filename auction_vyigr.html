@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Мои данные - Аукционы</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+<header>
+    <div class="top_menu">
+        <div class="container clearfix">
+            <div class="flLeft">
+                <a href="#">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+            </div>
+            <div class="flRight">
+                <nav class="top_menu-right">
+                    <a href="#">Мой кабинет</a>
+                    <a href="#">Форум</a>
+                    <a href="#">Помошь</a>
+                    <a href="#">Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix">
+        <div class="flLeft">
+            <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+        </div>
+        <div class="flRight header_search_panel">
+            <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <div class="menu-categories-header">
+                        <a href="#">Все категории <span class="arrow"></span></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Транспорт и запчасти</a></li>
+                                <li><a href="#">Электроника</a></li>
+                                <li><a href="#">Недвижимость</a></li>
+                                <li><a href="#">Готовый бизнес</a></li>
+                                <li><a href="#">Одежда и обувь</a></li>
+                                <li><a href="#">Украшения и часы</a></li>
+                                <li><a href="#">Игры, музыка, фильмы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Коллекционирование</a></li>
+                                <li><a href="#">Искусство и антиквариат</a></li>
+                                <li><a href="#">Книги</a></li>
+                                <li><a href="#">Дом и сад</a></li>
+                                <li><a href="#">Мебель</a></li>
+                                <li><a href="#">Ремонт и строительство</a></li>
+                                <li><a href="#">Товары для детей</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Товары для спорта</a></li>
+                                <li><a href="#">Растения и животные</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Праздники и подарки</a></li>
+                                <li><a href="#">Хобби</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+            <div class="h_opt-search">
+                <a class="orange" href="#">Расширенный поиск</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="wrapper">
+    <div class="container">
+        <div class="info_intro clearfix">
+            <div class="flLeft">
+                <p>
+                    <span class="intro_col1 name_company">Кабинет покупателя</span>
+                </p>
+                <p>
+                    <span class="intro_col1"><a class="orange under" href="#">Создать кабинет продавца</a></span>
+                </p>
+            </div>
+            <div class="flRight">
+            </div>
+        </div>
+
+        <nav class="wp_menu">
+            <a href="#">Экспресс-панель</a>
+            <a href="#">Персональная информация</a>
+            <a href="#">Сообщения</a>
+            <a href="#">Заказы</a>
+            <a href="#">Заявки</a>
+            <a href="#">Отзывы</a>
+            <a class="active" href="#">Аукционы</a>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="breadcrumbs">
+            <a href="#">Кабинет покупателя</a> > <a href="#">Аукционы</a> > <span class="active">Выигранные лоты</span>
+        </div>
+        <div class="w_content clearfix">
+            <div class="w_c_left">
+                <nav class="main_navigation">
+                    <a href="#">Лоты с моими ставками</a>
+                    <a class="active" href="#">Выигранные лоты</a>
+                    <a href="#">Не выигранные лоты</a>
+                </nav>
+            </div>
+            <div class="w_c_right">
+                <h3 class="w_r_title">Выигранные лоты</h3>
+                <div class="pg_izbr-TopPannel notWinnerLots clearfix">
+                    <div class="flLeft"></div>
+                    <div class="flRight">
+                                <span class="pg_izbr-sort">
+                                    Сортировать по
+                                    <select class="select small2 pg_izbrSortSelect" name="pg_izbr-sort-sel">
+                                        <option value="0" selected="selected">Цене (по убыванию)</option>
+                                        <option value="1">Цене (по возрастанию)</option>
+                                        <option value="2">Популярности</option>
+                                        <option value="2">Просмотрам</option>
+                                    </select>
+                                </span>
+                                <span class="pg_izbr-sort pg_izbr-sortCountGoods">
+                                    по
+                                    <select class="select xxsmall3 pg_izbrSortSelect" name="pg_izbr-sort-sel2">
+                                        <option value="0" selected="selected">100</option>
+                                        <option value="1">150</option>
+                                        <option value="2">200</option>
+                                        <option value="2">250</option>
+                                    </select>
+                                </span>
+                        <span class="pg_izbr-sortCountGoodsText">товаров на<br> странице</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="bl_pgAuction-c-wp clearfix">
+                    <div class="pgFavoritesGoods_list-image">
+                        <a href="#"><img src="img/photo/photo1-olympus.png" alt=""></a>
+                        <span class="pgfGoods_l-img-checked"></span>
+                    </div>
+                    <div class="pgFavoritesGoods_list-info auction_info">
+                        <a class="pgFavoritesGoods_list-infoTitle" href="#">Фотоаппарат Olympus</a>
+                        <div class="pgFavoritesGoods_list-info-shortinfo">Смартфон HTC One выполнен в цельном металлическом корпусе без щелей и зазоров, который отличается высокой прочностью. </div>
+                        <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                            <div class="flLeft">
+                                <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                            </div>
+                            <div class="flRight">
+                                <span class="pgF_list-info-stavka">6 ставок</span>
+                            </div>
+                        </div>
+                        <div class="pgF_list-info_prodavecTime clearfix">
+                            <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                            <div class="flRight">Аукцион завершен: 15.10.13</div>
+                        </div>
+                    </div>
+                    <div class="pgFavoritesGoods_list-price auction_info">
+                        <span class="padd_clear"></span>
+                        <span class="current_price_count2">15 000 руб.</span>
+                    </div>
+                </div>
+                <div class="bl_pgAuction-c-wp clearfix">
+                    <div class="pgFavoritesGoods_list-image">
+                        <a href="#"><img src="img/photo/photo1-olympus.png" alt=""></a>
+                        <span class="pgfGoods_l-img-checked"></span>
+                    </div>
+                    <div class="pgFavoritesGoods_list-info auction_info">
+                        <a class="pgFavoritesGoods_list-infoTitle" href="#">Фотоаппарат Olympus</a>
+                        <div class="pgFavoritesGoods_list-info-shortinfo">Смартфон HTC One выполнен в цельном металлическом корпусе без щелей и зазоров, который отличается высокой прочностью. </div>
+                        <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                            <div class="flLeft">
+                                <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                            </div>
+                            <div class="flRight">
+                                <span class="pgF_list-info-stavka">6 ставок</span>
+                            </div>
+                        </div>
+                        <div class="pgF_list-info_prodavecTime clearfix">
+                            <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                            <div class="flRight">Аукцион завершен: 15.10.13</div>
+                        </div>
+                    </div>
+                    <div class="pgFavoritesGoods_list-price auction_info">
+                        <span class="padd_clear"></span>
+                        <span class="current_price_count2">15 000 руб.</span>
+                    </div>
+                </div>
+                <div class="bl_pgAuction-c-wp clearfix">
+                    <div class="pgFavoritesGoods_list-image">
+                        <a href="#"><img src="img/photo/photo1-olympus.png" alt=""></a>
+                        <span class="pgfGoods_l-img-checked"></span>
+                    </div>
+                    <div class="pgFavoritesGoods_list-info auction_info">
+                        <a class="pgFavoritesGoods_list-infoTitle" href="#">Фотоаппарат Olympus</a>
+                        <div class="pgFavoritesGoods_list-info-shortinfo">Смартфон HTC One выполнен в цельном металлическом корпусе без щелей и зазоров, который отличается высокой прочностью. </div>
+                        <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                            <div class="flLeft">
+                                <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                            </div>
+                            <div class="flRight">
+                                <span class="pgF_list-info-stavka">6 ставок</span>
+                            </div>
+                        </div>
+                        <div class="pgF_list-info_prodavecTime clearfix">
+                            <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                            <div class="flRight">Аукцион завершен: 15.10.13</div>
+                        </div>
+                    </div>
+                    <div class="pgFavoritesGoods_list-price auction_info">
+                        <span class="padd_clear"></span>
+                        <span class="current_price_count2">15 000 руб.</span>
+                    </div>
+                </div>
+                <div class="bl_pgAuction-c-wp clearfix">
+                    <div class="pgFavoritesGoods_list-image">
+                        <a href="#"><img src="img/photo/photo1-olympus.png" alt=""></a>
+                        <span class="pgfGoods_l-img-checked"></span>
+                    </div>
+                    <div class="pgFavoritesGoods_list-info auction_info">
+                        <a class="pgFavoritesGoods_list-infoTitle" href="#">Фотоаппарат Olympus</a>
+                        <div class="pgFavoritesGoods_list-info-shortinfo">Смартфон HTC One выполнен в цельном металлическом корпусе без щелей и зазоров, который отличается высокой прочностью. </div>
+                        <div class="pgF_list-info_ratingStavki auction_info clearfix">
+                            <div class="flLeft">
+                                <span class="ItemLot_ratingComp"><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating active" href="#"></a><a class="vote_rating" href="#"></a>15 оценок</span>
+                            </div>
+                            <div class="flRight">
+                                <span class="pgF_list-info-stavka">6 ставок</span>
+                            </div>
+                        </div>
+                        <div class="pgF_list-info_prodavecTime clearfix">
+                            <div class="flLeft"><a class="orange nounder" href="#">Супер-Продавец 9876 <span class="icon_super-prodavec"></span></a></div>
+                            <div class="flRight">Аукцион завершен: 15.10.13</div>
+                        </div>
+                    </div>
+                    <div class="pgFavoritesGoods_list-price auction_info">
+                        <span class="padd_clear"></span>
+                        <span class="current_price_count2">15 000 руб.</span>
+                    </div>
+                </div>
+
+                <div class="pgAuction-BottomPannel">
+                    <nav class="pagination">
+                        <a class="prev" href="#"><img src="img/pagination_prev.gif"></a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a class="active" href="#">4</a><a href="#">5</a>
+                        <a class="more" href="#">...</a>
+                        <a href="#">8</a><a href="#">9</a><a href="#">10</a><a class="next" href="#"><img src="img/pagination_next.gif"></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

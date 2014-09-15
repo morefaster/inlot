@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Регистрация</title>
+    <meta name="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <!-- include jQuery Library -->
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js" type="text/javascript"></script>
+        <script src="js/IE9.js" type="text/javascript"></script>
+        <link href="css/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- base style site -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- jQuery FormStyler -->
+    <link href="js/formstyler/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <script src="js/formstyler/jquery.formstyler.min.js" type="text/javascript"></script>
+
+    <!-- jQuery ScrollPane -->
+    <link href="js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all">
+    <script src="js/jscrollpane/jquery.jscrollpane.js" type="text/javascript"></script>
+    <script src="js/jscrollpane/jquery.mousewheel.js" type="text/javascript"></script>
+
+    <!-- modal Window -->
+    <link href="js/articmodal/jquery.arcticmodal-0.3.css" rel="stylesheet" type="text/css">
+    <link href="js/articmodal/simple.css" rel="stylesheet" type="text/css">
+    <script src="js/articmodal/jquery.arcticmodal-0.3.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page_container">
+    <header>
+        <div class="top_menu">
+            <div class="container clearfix">
+                <div class="flLeft">
+                    <a class="enter_site" href="">Вход</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Регистрация</a>
+                </div>
+                <div style="display: none;">
+                    <div class="box-modal" id="BoxModalLogin">
+                        <div class="box-modal_close arcticmodal-close"></div>
+                        <form action="#" method="post" class="modalEnter_toSiteForm">
+                            <p>Войти через социальные сети</p>
+                            <div class="socials clearfix">
+                                <nav>
+                                    <a class="vk" href="#"></a>
+                                    <a class="fb" href="#"></a>
+                                    <a class="odn" href="#"></a>
+                                    <a class="mailru" href="#"></a>
+                                </nav>
+                            </div>
+                            <div class="EnterSiteModal_form">
+                                <h3 class="w_r_title">Войти</h3>
+                                <p><input type="text" class="styled" style="width: 100%;" placeholder="E-mail"></p>
+                                <p><input type="text" class="styled" style="width: 100%;" placeholder="E-mail"></p>
+                                <div class="flLeft">
+                                    <a class="orange under" href="#">Забыли пароль?</a><br>
+                                    <a class="orange under" href="#">Зарегистрироваться?</a>
+                                </div>
+                                <div class="flRight">
+                                    <input type="submit" class="submit" value="Войти">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="flRight">
+                    <nav class="top_menu-right">
+                        <a href="#">Мой кабинет</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Помошь</a>
+                        <a href="#">Корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container cart clearfix">
+            <div class="flLeft">
+                <a class="h_logo" href="#"><img src="img/head_logo.png" width="132" height="34"></a>
+            </div>
+            <div class="flRight header_search_panel">
+                <div class="h_search_panel">
+                    <input class="styled header" type="text" value="" name="s">
+                    <select id="h_select" name="cat">
+                        <option value="0" selected="selected">Все категории</option>
+                        <option value="1">Категория #1</option>
+                        <option value="2">Категория #2</option>
+                        <option value="3">Категория #3</option>
+                    </select>
+                    <input class="submit" type="submit" value="Поиск">
+                </div>
+                <div class="h_opt-search">
+                    <a class="orange" href="#">Расширенный поиск</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navigation_cart">
+                <a href="#">Аукцион</a>
+                <a href="#">Самое популярное</a>
+                <a href="#">Оптовые товары</a>
+                <a href="#">Товары со скидками</a>
+            </nav>
+            <div class="w_content site_registration">
+                <aside class="blPage_registration">
+                    <h3 class="w_r_title">Преимущества регистрации</h3>
+                    <ul class="advateg_registr">
+                        <li><span class="item1"></span>Удобно совершать любые покупки</li>
+                        <li><span class="item2"></span>Удобство оплаты</li>
+                        <li><span class="item3"></span>Легко следить за выполнением заказа</li>
+                        <li><span class="item4"></span>100 % гарантия доставки</li>
+                        <li><span class="item5"></span>Возврат товаров 365 дней</li>
+                        <li><span class="item6"></span>Клиентский сервис 24/7</li>
+                    </ul>
+                    <div class="blPage_registration-gray">
+                        <span class="fStyleBigOrange">Есть вопросы?</span>
+                        <p style="margin: 15px 0;">Звоните по бесплатному номеру  круглосуточно</p>
+                        <p><span class="blQuestionPhone" style="margin-right: 15px;">8 (800) 777-77-77</span><span class="blQuestionPhone">8 (800) 777-77-77</span></p>
+                    </div>
+                    <div class="blPage_registration-gray">
+                        <a class="fStyleBigOrange" style="text-transform: uppercase;" href="#">Видеотур</a> по нашему сервису
+                    </div>
+                </aside>
+                <div class="cPage_registration">
+                    <h3 class="w_r_title">Зарегистрируйтесь на inLot</h3>
+                    <p>Создайте личную учетную запись или учетную запись компании.</p>
+                    <div class="section_tabs">
+                        <ul class="tabs">
+                            <li class="current">Регистрация продавца</li>
+                            <li>Регистрация покупателя</li>
+                        </ul>
+                        <p>Зарегистрируйтесь через социальные сети</p>
+                        <div class="socials clearfix">
+                            <nav>
+                                <a class="vk" href="#"></a>
+                                <a class="fb" href="#"></a>
+                                <a class="odn" href="#"></a>
+                                <a class="mailru" href="#"></a>
+                            </nav>
+                        </div>
+                        <p style="margin:0 0 20px;">Или заполните форму ниже (все поля обязательны для заполнения)</p>
+                        <div class="box_tab visible">
+                            <p class="formRegistration"><label><input type="text" class="styled" name="name_company" value="" placeholder="Название компании"></label></p>
+                            <p class="formRegistration"><label class="radio"><input type="radio" name="company_type" value="1"> <span>Частное лицо</span></label><label class="radio"><input type="radio" name="company_type" value="1"> <span>ИП, компания</span></label></p>
+                            <p class="formRegistration two_inputs"><label><input type="text" class="styled mrg_right15" name="name" value="" placeholder="Ваше Имя"></label><label><input type="text" class="styled" name="familiya" value="" placeholder="Фамилия"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="email" value="" placeholder="E-mail"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="passwd" value="" placeholder="Пароль (не менее 6-ти символов)"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="confirm_passwd" value="" placeholder="Подтвердите пароль"></label></p>
+                            <p class="formRegistration"><input type="checkbox" name="uslovia" id="uslovia" value="1" class="styled"><span class="uslovia_text">Я согласен с условиями <a href="#" class="orange under" onclick="$('#modal_licence').arcticmodal(); return false;">лицензионного соглашения</a></span></p>
+                            <p class="formRegistration"><label><input type="submit" class="submit" value="Зарегистрироваться"></label></p>
+                        </div>
+
+                        <div class="box_tab">
+                            <p class="formRegistration two_inputs"><label><input type="text" class="styled mrg_right15" name="name" value="" placeholder="Ваше Имя"></label><label><input type="text" class="styled" name="familiya" value="" placeholder="Фамилия"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="email" value="" placeholder="E-mail"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="passwd" value="" placeholder="Пароль (не менее 6-ти символов)"></label></p>
+                            <p class="formRegistration"><label><input type="text" class="styled" name="confirm_passwd" value="" placeholder="Подтвердите пароль"></label></p>
+                            <p class="formRegistration"><input type="checkbox" name="uslovia" id="uslovia" value="1" class="styled"><span class="uslovia_text">Я согласен с условиями <a href="#" class="orange under" onclick="$('#modal_licence').arcticmodal(); return false;">лицензионного соглашения</a></span></p>
+                            <p class="formRegistration"><label><input type="submit" class="submit" value="Зарегистрироваться"></label></p>
+                        </div>
+                    </div>
+
+                    <div style="display: none;">
+                        <div class="box-modal" id="modal_licence">
+                            <div class="box-modal_close arcticmodal-close"></div>
+                            <h3 class="w_r_title">Лицензионное соглашение</h3>
+                            <div class="TextBlock-licence scroll-pane">
+                                <div>Пользовательское соглашение<br>
+                                Во избежание противоречий, все термины и определения, используемые в настоящем Пользовательском соглашении соответствуют терминам и определениям, закрепленном в документе «Термины и определения», расположенном по адресу: http://tiu.ru/terms-and-definitions.<br>
+                                Портал Tiu.ru предоставляет Услуги на условиях, описанных в настоящем документе. Пользовательское соглашение может быть изменено в любой момент без предварительного уведомления Пользователей. Текущая версия Пользовательского соглашения доступна в сети Интернет по адресу http://tiu.ru/terms-of-use. Моментом заключения настоящего пользовательского соглашения считается момент любого взаимодействия Пользователя с Порталом. Настоящим Пользователи подтверждают свое согласие со всеми условиями Пользовательского соглашения.<br>
+                                Принципы работы Портала<br>
+                                Портал – рекламная площадка в сети Интернет, расположенная по адресу http://tiu.ru/ Целью функционирования Портала является предоставление доступа Покупателей к информации о Компаниях, в том числе контактной информации, информации о товарах и услугах, предлагаемых Компаниями, а также помощь Покупателям в поиске максимально выгодного предложения, соответствующего запросу качества, количества и характеристик. Миссия Портала – помочь предпринимателям продавать, а потребителям покупать товары и услуги в интернете на максимально выгодных условиях. ТИУ.РУ представляет любой компании возможность создать собственную рекламную площадку (веб-сайт, интернет-магазин), а также принимать и обрабатывать заказы, поступающие из каталога товаров и услуг Портала Tiu.ru.<br>
+                                Для Пользователей сайта, заинтересованных в приобретении Товаров и услуг (Покупателей) создана платформа для выбора интересующих их товаров и услуг: каталог, насчитывающий десятки тысяч подкатегорий и миллионы<br>
+                                Пользовательское соглашение<br>
+                                Во избежание противоречий, все термины и определения, используемые в настоящем Пользовательском соглашении соответствуют терминам и определениям, закрепленном в документе «Термины и определения», расположенном по адресу: http://tiu.ru/terms-and-definitions.<br>
+                                Портал Tiu.ru предоставляет Услуги на условиях, описанных в настоящем документе. Пользовательское соглашение может быть изменено в любой момент без предварительного уведомления Пользователей. Текущая версия Пользовательского соглашения доступна в сети Интернет по адресу http://tiu.ru/terms-of-use. Моментом заключения настоящего пользовательского соглашения считается момент любого взаимодействия Пользователя с Порталом. Настоящим Пользователи подтверждают свое согласие со всеми условиями Пользовательского соглашения.<br>
+                                Принципы работы Портала<br>
+                                Портал – рекламная площадка в сети Интернет, расположенная по адресу http://tiu.ru/ Целью функционирования Портала является <br>предоставление доступа Покупателей к информации о Компаниях, в том числе контактной информации, информации о товарах и услугах, предлагаемых Компаниями, а также помощь Покупателям в поиске максимально выгодного предложения, соответствующего запросу качества, количества и характеристик. Миссия Портала – помочь предпринимателям продавать, а потребителям покупать товары и услуги в интернете на максимально выгодных условиях. ТИУ.РУ представляет любой компании возможность создать собственную рекламную площадку (веб-сайт, интернет-магазин), а также принимать и обрабатывать заказы, поступающие из каталога товаров и услуг Портала Tiu.ru.<br>
+                                Для Пользователей сайта, заинтересованных в приобретении Товаров и услуг (Покупателей) создана платформа для выбора интересующих их товаров и услуг: каталог, насчитывающий десятки тысяч подкатегорий и миллионы </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w_footINfo_intro">
+                <div class="w_footINfo_intro_bl">
+                    <ul class="f_menu">
+                        <li><a href="#"><b>О нас</b></a></li>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Обратная свзяь</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="w_footINfo_intro_bl">
+                    <ul class="f_menu">
+                        <li><a href="#"><b>Сервис</b></a></li>
+                        <li><a href="#">Условия продажи</a></li>
+                        <li><a href="#">Условия доставки</a></li>
+                        <li><a href="#">Способы оплат</a></li>
+                        <li><a href="#">Условия возврата</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">Защита информации</a></li>
+                    </ul>
+                </div>
+                <div class="w_footINfo_intro_bl">
+                    <ul class="f_menu">
+                        <li><a href="#"><b>Способы оплаты</b></a></li>
+                    </ul>
+                    <div class="infoLot_p_cards registr">
+                        <a class="mastercard" href="#"><img src="img/card_mastercard.png"></a>
+                        <a class="visa" href="#"><img src="img/card_visa.png"></a>
+                        <a class="yandex" href="#"><img src="img/card_yandex.png"></a><br>
+                        <a class="webmoney" href="#"><img src="img/card_webmoney.png"></a>
+                    </div>
+                </div>
+                <div class="w_footINfo_intro_bl">
+                    <ul class="f_menu">
+                        <li><a href="#"><b>Способы доставки</b></a></li>
+                    </ul>
+                    <ul class="w_footINfo_intro_bl_Delivery">
+                        <li><img src='img/image_delivery/de1.png'></li>
+                        <li><img src='img/image_delivery/de2.png'></li>
+                        <li class="clear"><img src='img/image_delivery/de3.png'></li>
+                        <li><img src='img/image_delivery/de4.png'></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer>
+        <div class="container">
+            <div class="footer_cols clearfix">
+                <div class="f_bl_line f_bl_line1">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Сервисы</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товаров</a></li>
+                        <li><a href="#">Справка</a></li>
+                        <li><a href="#">Правила торговой площадки</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line2">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">Информация</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Программа защиты покупателей</a></li>
+                        <li><a href="#">Программа защиты продавцов</a></li>
+                        <li><a href="#">Конфидециальность</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line3">
+                    <ul class="f_menu">
+                        <li><a href="javascript:void(0)">О нас</a></li>
+                        <li><a href="#">Информация о компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+                <div class="f_bl_line f_bl_line4">
+                    <div><b>Подписка на объявления</b></div>
+                    <div class="form_subscribe-footer">
+                        <form action="#" method="post">
+                            <input type="text" class="styled f-subs" placeholder="Введите e-mail"><br>
+                            <input type="submit" class="submit" value="Подписаться">
+                        </form>
+                    </div>
+                    <div class="connect_us-footer">
+                        <div><b>Присоединяйтесь</b></div>
+                        <nav class="soc-icons_f">
+                            <a href="#" class="vk" title="Вконтакте"></a>
+                            <a href="#" class="fb" title="Facebook"></a>
+                            <a href="#" class="tw" title="Twitter"></a>
+                            <a href="#" class="in" title="Instagram"></a>
+                            <a href="#" class="gp" title="Google Plus"></a>
+                            <a href="#" class="od" title="Одноклассники"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_line2">
+                <p>ООО “Инлот” 2013.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
